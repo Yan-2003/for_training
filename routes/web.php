@@ -3,6 +3,6 @@
 use Illuminate\Support\Facades\Route;
 
 Route::inertia('/', 'welcome')->name('home');
-Route::get('/hello', function () {
+Route::get('version', function () {
     return response()->json(['message' => 'hello']);
 });
